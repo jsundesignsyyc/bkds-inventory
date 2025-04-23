@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BKDS Inventory</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles-global.css">
+    <link rel="stylesheet" href="./styles-index.css">
+    <script defer src="./script-global.js"></script>
+</head>
+<body>
+    
+    <nav id="nav-index" class="navbar">
+        <section class="nav-left">
+            <select id="location-selector" class="location-dropdown">
+                <option value="" disabled selected>Select Location</option>
+                <option value="inglewood">Inglewood</option>
+                <option value="17th-ave">17th Avenue</option>
+                <option value="marda-loop">Marda Loop</option>
+                <option value="country-hills">Country Hills</option>
+            </select>
+        </section>
+        <section class="nav-middle">
+            <img src="./assets/logo/bds new black.png">
+        </section>
+        <section class="nav-right">
+            <a id="index-history">History</a>
+        </section>
+    </nav>
+
+
+    <main id="index-container">
+        <div id="current-week-section">
+            <p>Current Week</p>
+            <div class="week-container">
+                <a id="current-week-button">2025-03-17 → 2025-03-23</a>
+            </div>
+        </div>
+    
+        <div id="past-weeks-section">
+            <p>Past Weeks</p>
+            <div>
+                <a class="past-weeks-button">2025-03-10 → 2025-03-16</a>
+                <a class="past-weeks-button">2025-03-10 → 2025-03-16</a>
+                <a class="past-weeks-button">2025-03-10 → 2025-03-16</a>
+            </div>
+        </div>
+    
+        <div>
+            <a id="index-view-more">View More</a>
+        </div>
+    
+    
+    </main>
+</body>
+</html>
