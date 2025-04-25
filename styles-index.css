@@ -1,3 +1,9 @@
+a {
+    cursor: pointer;
+}
+
+
+
 /* Location dropdown styling */
 .location-dropdown {
     font-size: 16px;
@@ -10,8 +16,9 @@
 /* Main content container */
 #index-container {
     /* border: 1px solid lime; */
-    width: 80%;
+    max-width: 500px;
     margin: auto;
+    margin-top: 50px;
 
 }
 
@@ -26,21 +33,43 @@
     margin-bottom: 8px;
 }
 
+#new-week {
+    /* border: 1px red solid; */
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;;
+}
+
+#new-week-button {
+    display: block;
+    background-color: #d9d9d9;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    width: fit-content;
+    max-width: 100%;
+}
+
+
+
 #current-week-button,
 .past-weeks-button {
     display: block;
     background-color: #d9d9d9;
     padding: 14px 16px;
     border-radius: 10px;
-    margin: 0 auto 20px auto; /* ✅ this centers the button */
-    font-family: "IBM Plex Mono", monospace;
-    text-decoration: none;
-    color: black;
+    margin: 0 auto 20px auto; 
     width: fit-content;
     max-width: 100%;
     box-sizing: border-box;
     text-align: left;
 }
+
+#current-week-button {
+    /* font-weight: bold; */
+    background-color: #bde0fe;
+}
+
 
 
 /* View More link */

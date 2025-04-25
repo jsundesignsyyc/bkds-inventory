@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Editable Week Inventory</title>
+  <link rel="stylesheet" href="./styles-global.css" />
+  <style>
+    body {
+      padding: 1rem;
+    }
+    table {
+      width: fit-content;
+      border-collapse: collapse;
+      margin-bottom: 2rem;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 0.5rem;
+      min-width: 50px;
+      text-align: center;
+    }
+    th {
+      background-color: #f0f0f0;
+      font-size: 0.8rem;
+    }
+    input[type="text"],
+    input[type="number"] {
+      width: 100%;
+      border: none;
+      text-align: center;
+      background-color: transparent;
+    }
+    input[type="text"]:focus,
+    input[type="number"]:focus {
+      background-color: #e8f0fe;
+      outline: none;
+    }
+
+
+    #inventory-table {
+      overflow: auto;
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .controls button {
+      padding: 0.25rem 0.5rem;
+    }
+    .week-switcher {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <a href="index.html" style="display: inline-block; margin-bottom: 1rem;">← Back to weeks</a>
+
+  <div class="week-switcher">
+    <label for="week-selector">Switch Week: </label>
+    <select id="week-selector"></select>
+  </div>
+
+  <h1>
+    Inventory for <span id="week-range">[Week Range]</span>
+  </h1>
+  <button id="upload-all-button" style="margin-bottom: 1rem;">Upload All Changes</button>
+
+  <table id="inventory-table">
+    <thead>
+      <tr>
+        <th class="sticky-col-1">SKU</th>
+        <th class="sticky-col-2">Brand</th>
+        <th class="sticky-col-3">Item</th>
+        <th class="sticky-col-4">Pack Size</th>
+        <th class="sticky-col-5">Unit</th>
+        <th class="sticky-col-6">Unit Price</th>
+        <th>Last Sunday</th>
+        <th>Mon Shipment</th><th>Mon</th>
+        <th>Tue Shipment</th><th>Tue</th>
+        <th>Wed Shipment</th><th>Wed</th>
+        <th>Thu Shipment</th><th>Thu</th>
+        <th>Fri Shipment</th><th>Fri</th>
+        <th>Sat Shipment</th><th>Sat</th>
+        <th>Sun Shipment</th><th>Sun</th>
+        <th>Amount Sold</th>
+        <th>Item Cost</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody id="inventory-body">
+      <!-- JS-generated rows go here -->
+    </tbody>
+  </table>
+
+  <script type="module" src="./script-week.js"></script>
+</body>
+</html>
